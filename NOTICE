@@ -1,0 +1,18 @@
+Demonstrates usage of the AWS::Serverless::GraphQLAPI resource for AWS Serverless Applicaiton Model (SAM)
+
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+---
+
+THIRD PARTY COMPONENTS
+
+---
+
+This software includes third party software subject to the following copyrights:
+
+@aws-appsync/utils: Apache License Version 2.0
+aws-amplify: Apache License Version 2.0
+copy-webpack-plugin: MIT License
+webpack: MIT License
+webpack-cli: MIT License
+webpack-dev-server: MIT License

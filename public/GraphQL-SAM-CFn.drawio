@@ -1,0 +1,465 @@
+<mxfile host="Electron" modified="2023-06-29T10:32:41.618Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.3.7 Chrome/112.0.5615.204 Electron/24.5.0 Safari/537.36" etag="cyazbZYJkrJse-2of89A" version="21.3.7" type="device">
+  <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
+    <mxGraphModel dx="2388" dy="1562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="17acba5748e5396b-20" value="CloudFormation DynamoDBPostsTable&lt;br&gt;type: AWS::DynamoDB::Table" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="760" y="87" width="490" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="17acba5748e5396b-21" value="+ property: AttributeDefinitions" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-20" vertex="1">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="17acba5748e5396b-24" value="+ property: BillingMode" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-20" vertex="1">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="17acba5748e5396b-26" value="+ property:&amp;nbsp;KeySchema" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-20" vertex="1">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5d2195bd80daf111-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;SAM Template&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;type:&amp;nbsp;&lt;/i&gt;AWS::Serverless-2016-10-31&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ resource:&amp;nbsp;AWS::Serverless::SimpleTable&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ resource: &amp;nbsp;AWS::Serverless::GraphQLApi&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
+          <mxGeometry x="60" y="87" width="270" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;SAM DynamoDBPostsTable&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="390" y="130" width="270" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;SAM GraphQLPostsAPI&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;type:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;AWS::Serverless::GraphQLApi&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ property:&amp;nbsp;SchemaUri&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ property: &amp;nbsp;Auth&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ property: &amp;nbsp;ApiKeys&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ property: &amp;nbsp;DataSources&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ property: &amp;nbsp;Functions&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ property: &amp;nbsp;Resolvers&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="270" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-4" value="SAM function: formatPostItem" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="395" y="460" width="185" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-5" value="+ field: Runtime" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-4">
+          <mxGeometry y="26" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-6" value="+ field: DataSource" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-4">
+          <mxGeometry y="52" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-7" value="+ field: CodeUri" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-4">
+          <mxGeometry y="78" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-11" value="SAM function: createPostItem" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="395" y="586" width="185" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-12" value="+ field: Runtime" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-11">
+          <mxGeometry y="26" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-13" value="+ field: DataSource" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-11">
+          <mxGeometry y="52" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-14" value="+ field: CodeUri" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-11">
+          <mxGeometry y="78" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-15" value="SAM function: getPostFromTable" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="395" y="720" width="185" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-16" value="+ field: Runtime" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-15">
+          <mxGeometry y="26" width="185" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-17" value="+ field: DataSource" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-15">
+          <mxGeometry y="48" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-18" value="+ field: CodeUri" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-15">
+          <mxGeometry y="74" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-19" value="SAM datasource: DynamoDb" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="395" y="360" width="185" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-20" value="+ field: TableName" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-19">
+          <mxGeometry y="26" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-21" value="+ field: TableArn" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-19">
+          <mxGeometry y="52" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-23" value="SAM resolver: Mutation" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="395" y="840" width="185" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-24" value="+ field: Runtime" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-23">
+          <mxGeometry y="26" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-25" value="+ field: Pipeline" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-23">
+          <mxGeometry y="52" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-27" value="SAM resolver: Query" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="395" y="940" width="185" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-28" value="+ field: Runtime" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-27">
+          <mxGeometry y="26" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-29" value="+ field: Pipeline" style="text;html=1;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-27">
+          <mxGeometry y="52" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-31" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=-0.006;entryY=-0.115;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="OdwOLXu5QFoFb60RisvL-21">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="200" y="375" as="sourcePoint" />
+            <mxPoint x="360" y="375" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="375" />
+              <mxPoint x="300" y="409" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-32" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=-0.016;entryY=0.173;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="OdwOLXu5QFoFb60RisvL-4">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="200" y="390" as="sourcePoint" />
+            <mxPoint x="390" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="390" />
+              <mxPoint x="210" y="391" />
+              <mxPoint x="260" y="391" />
+              <mxPoint x="260" y="478" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-40" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="260" y="480" as="sourcePoint" />
+            <mxPoint x="380" y="598" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="540" />
+              <mxPoint x="260" y="598" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-41" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="260" y="600" as="sourcePoint" />
+            <mxPoint x="380" y="730" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-42" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="200" y="405" as="sourcePoint" />
+            <mxPoint x="390" y="850" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="220" y="405" />
+              <mxPoint x="220" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-43" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="220" y="850" as="sourcePoint" />
+            <mxPoint x="390" y="950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-45" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="300" y="143" as="sourcePoint" />
+            <mxPoint x="380" y="143" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-46" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="160" as="sourcePoint" />
+            <mxPoint x="310" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-47" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="620" y="141" as="sourcePoint" />
+            <mxPoint x="750" y="141" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-48" value="CloudFormation GraphQLPostsAPI&lt;br&gt;type: AWS::AppSync::GraphQLApi" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="260" width="490" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-49" value="+ property: AuthenticationType" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-48">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-50" value="+ property: LogConfig" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-48">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-51" value="+ property:&amp;nbsp;Name" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-48">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-52" value="CloudFormation GraphQLPostsAPISchema&lt;br&gt;type: AWS::AppSync::GraphQLSchema" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="423" width="490" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-53" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-52">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-54" value="+ property: DefinitionS3Location" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-52">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-56" value="CloudFormation GraphQLPostsAPICloudWatchRole&lt;br&gt;type: AWS::IAM::Role" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="260" width="490" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-116" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="OdwOLXu5QFoFb60RisvL-56">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-80" y="30" as="sourcePoint" />
+            <mxPoint x="40" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-57" value="+ property: AssumeRolePolicyDocument" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-56">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-58" value="+ property: ManagedPolicyArns" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-56">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-59" value="CloudFormation GraphQLPostsAPIMyApiKey&lt;br&gt;type: AWS::AppSync::ApiKey" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="564" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-60" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-59">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-62" value="CloudFormation GraphQLPostsAPIPostsDataSourceDynamoDBDataSource&lt;br&gt;type: AWS::AppSync::DataSource" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="680" width="490" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-63" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-62">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-64" value="+ property: Name" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-62">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-65" value="+ property:&amp;nbsp;ServiceRoleArn" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-62">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-66" value="+ property:&amp;nbsp;Type" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-62">
+          <mxGeometry y="128" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-67" value="CloudFormation GraphQLPostsAPIPostsDataSourceDynamoDBDataSourceRole&lt;br&gt;type: AWS::IAM::Role" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="680" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-117" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="OdwOLXu5QFoFb60RisvL-67">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-70" y="30" as="sourcePoint" />
+            <mxPoint x="40" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-68" value="+ property: AssumeRolePolicyDocument" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-67">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-69" value="CloudFormation GraphQLPostsAPIPostsDataSourceDynamoDBDataSourceToTableConnectorPolicy&lt;br&gt;type: AWS::IAM::ManagedPolicy" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="680" width="490" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-70" value="+ property: PolicyDocument" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-69">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-72" value="+ property: Roles" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-69">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-73" value="CloudFormation GraphQLPostsAPIformatPostItem&lt;br&gt;type: AWS::AppSync::FunctionConfiguration" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="870" width="490" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-74" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-73">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-75" value="+ property: CodeS3Location" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-73">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-76" value="+ property:&amp;nbsp;DataSourceName" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-73">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-77" value="+ property:&amp;nbsp;Name" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-73">
+          <mxGeometry y="128" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-78" value="+ property:&amp;nbsp;Runtime" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-73">
+          <mxGeometry y="154" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-79" value="CloudFormation GraphQLPostsAPIcreatePostItem&lt;br&gt;type: AWS::AppSync::FunctionConfiguration" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1090" width="490" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-80" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-79">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-81" value="+ property: CodeS3Location" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-79">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-82" value="+ property:&amp;nbsp;DataSourceName" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-79">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-83" value="+ property:&amp;nbsp;Name" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-79">
+          <mxGeometry y="128" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-84" value="+ property:&amp;nbsp;Runtime" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-79">
+          <mxGeometry y="154" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-85" value="CloudFormation GraphQLPostsAPIgetPostFromTable&lt;br&gt;type: AWS::AppSync::FunctionConfiguration" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1290" width="490" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-86" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-85">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-87" value="+ property: CodeS3Location" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-85">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-88" value="+ property:&amp;nbsp;DataSourceName" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-85">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-89" value="+ property:&amp;nbsp;Name" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-85">
+          <mxGeometry y="128" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-90" value="+ property:&amp;nbsp;Runtime" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-85">
+          <mxGeometry y="154" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-91" value="CloudFormation GraphQLPostsAPIMutationaddPost&lt;br&gt;type: AWS::AppSync::Resolver" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1490" width="490" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-92" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-91">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-93" value="+ property: Code" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-91">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-94" value="+ property:&amp;nbsp;FieldName" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-91">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-95" value="+ property:&amp;nbsp;Kind" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-91">
+          <mxGeometry y="128" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-96" value="+ property:&amp;nbsp;PipelineConfig" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-91">
+          <mxGeometry y="154" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-97" value="+ property:&amp;nbsp;Runtime" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-91">
+          <mxGeometry y="180" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-98" value="+ property:&amp;nbsp;TypeName" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-91">
+          <mxGeometry y="206" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-99" value="CloudFormation GraphQLPostsAPIQuerygetPost&lt;br&gt;type: AWS::AppSync::Resolver" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1740" width="490" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-100" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-99">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-101" value="+ property: Code" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-99">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-102" value="+ property:&amp;nbsp;FieldName" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-99">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-103" value="+ property:&amp;nbsp;Kind" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-99">
+          <mxGeometry y="128" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-104" value="+ property:&amp;nbsp;PipelineConfig" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-99">
+          <mxGeometry y="154" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-105" value="+ property:&amp;nbsp;Runtime" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-99">
+          <mxGeometry y="180" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-106" value="+ property:&amp;nbsp;TypeName" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-99">
+          <mxGeometry y="206" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-107" value="CloudFormation GraphQLPostsAPINoneDataSource&lt;br&gt;type: AWS::AppSync::DataSource" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="870" width="490" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-108" value="+ property: ApiId" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-107">
+          <mxGeometry y="50" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-109" value="+ property: Name" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-107">
+          <mxGeometry y="76" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-111" value="+ property:&amp;nbsp;Type" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OdwOLXu5QFoFb60RisvL-107">
+          <mxGeometry y="102" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-112" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="290" as="sourcePoint" />
+            <mxPoint x="750" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-113" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="210" y="329.5" as="sourcePoint" />
+            <mxPoint x="750" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="330" />
+              <mxPoint x="670" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-114" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="210" y="344.75" as="sourcePoint" />
+            <mxPoint x="750" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="340" />
+              <mxPoint x="660" y="470" />
+              <mxPoint x="660" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-115" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="370" as="sourcePoint" />
+            <mxPoint x="750" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="370" />
+              <mxPoint x="650" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-118" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1740" y="710" as="sourcePoint" />
+            <mxPoint x="1850" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-119" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1210" y="900" as="sourcePoint" />
+            <mxPoint x="1320" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-120" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="473" as="sourcePoint" />
+            <mxPoint x="750" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="473" />
+              <mxPoint x="640" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-121" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="600" as="sourcePoint" />
+            <mxPoint x="750" y="1110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="600" />
+              <mxPoint x="630" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-122" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="730" as="sourcePoint" />
+            <mxPoint x="750" y="1310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="730" />
+              <mxPoint x="620" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-123" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="850" as="sourcePoint" />
+            <mxPoint x="750" y="1510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="850" />
+              <mxPoint x="610" y="1510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdwOLXu5QFoFb60RisvL-124" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="950" as="sourcePoint" />
+            <mxPoint x="750" y="1770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="950" />
+              <mxPoint x="600" y="1770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

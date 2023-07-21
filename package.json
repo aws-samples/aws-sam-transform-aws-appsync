@@ -1,0 +1,23 @@
+{
+  "name": "graphql-stream-sub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack && webpack-dev-server --mode development",
+    "build": "webpack",
+    "clean": "rm -rf dist"
+  },
+  "author": "Kevin Schwarz",
+  "license": "MIT No Attribution",
+  "dependencies": {
+    "aws-amplify": "^5.2.5"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.3"
+  }
+}

@@ -1,0 +1,27 @@
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type Query {
+  getPost(id: String!): Post
+}
+
+type Mutation {
+  addPost(author: String!, title: String!, content: String!): Post!
+}
+
+type Post {
+  id: String!
+  author: String
+  title: String
+  content: String
+  ups: Int!
+  downs: Int!
+  version: Int!
+}
+
+type Subscription {
+  addedPost: Post @aws_subscribe(mutations: ["addPost"])
+}
