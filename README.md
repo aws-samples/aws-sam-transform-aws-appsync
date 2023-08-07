@@ -60,9 +60,9 @@ To interact with your API using the curl command you can run the provided sample
   curl \
   --request POST \
   --header 'Content-Type: application/json' \
-  --header 'x-api-key: <API-KEY>' \
+  --header 'x-api-key: <API_KEY>' \
   --data '{ "query": "mutation AddPost { addPost(author: \"Anonymous\", content: \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\", title: \"A simple post\") { author content id } }" }' \
-  https://<APPSYNC-API-ENDPOINT>
+  https://<APPSYNC_API_ENDPOINT>
 ```
 
 Capture the value of the post “id” field from the response so that you can use it in a query against API to retrieve your post.
@@ -71,9 +71,9 @@ Capture the value of the post “id” field from the response so that you can u
   curl \
   --request POST \
   --header 'Content-Type: application/json' \
-  --header 'x-api-key: <API-KEY>' \
+  --header 'x-api-key: <API_KEY>' \
   --data '{ "query": "{ getPost(id: \"<POST-ID>\") { id author title content version ups downs } }" }' \
-  https://<APPSYNC-API-ENDPOINT>
+  https://<APPSYNC_API_ENDPOINT>
 ```
 
 The response will contain similar data to the response from your initial AddPost mutation query, but this getPost query defined more response fields in the GraphQL query. If you inspect the function code in the file `sam_graphql_api/formatPostItem.js` you’ll see that this JavaScript revolver function not only sets up the unique ID for our DynamoDB record, but also sets a version and some up and down vote values for the post. If you look into your SAM `template.yml` file in the Resolvers section you can see that formatPostItem runs prior to createPostItem so that any modifications it makes to the request values are persisted into DynamoDB. If you look at the Functions section in your template.yml you’ll see that formatPostItem declares a NONE data source and createPostItem references the DynamoDB PostsDataSource defined at the top of the file as an `AWS::Serverless::SimpleTable` You can also view records created with AddPost in the DynamoDB item explorer console.
@@ -97,6 +97,9 @@ export default awsmobile;
 With your `src/exports.js` updated and saved, you are now ready to start your webserver and view some real time posts streamed from your subscription. Run the following commands to install, build and run the web application.
 
 ```
+# uncomment AWS_SDK_LOAD_CONFIG for externally configured credentials (any type of federation, SSO)
+# https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-configured-credential-process.html
+# export AWS_SDK_LOAD_CONFIG=1
 npm install
 npm run build
 npm run start
