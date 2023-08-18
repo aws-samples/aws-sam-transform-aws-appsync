@@ -1,6 +1,6 @@
 # AWS SAM: Deploying GraphQL
 
-This repository includes a sample application and demonstrates how to deploy and test the new [AWS::Serverless::GraphQLApi](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-graphqlapi.html) resource for AWS Serverless Applicaiton Model (SAM). This project is a companion to the blog [Introducing AWS SAM generated resources for GraphQL](#).
+This repository includes a sample application and demonstrates how to deploy and test the new [AWS::Serverless::GraphQLApi](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-graphqlapi.html) resource for AWS Serverless Applicaiton Model (SAM). This project is a companion to the blog [Introducing AWS SAM generated resources for GraphQL](https://aws.amazon.com/blogs/mobile/aws-sam-now-supports-graphql-applications-with-aws-appsync/).
 
 You can accelerate your AppSync API development with SAM using `AWS::Serverless::GraphQLAPI`. SAM simplifies the createion of AppSync API schemas, functions, resolvers, datasource connectors and API credentials. SAM also creates the required IAM resources with the principle of least privilidge.
 
