@@ -12,7 +12,7 @@
   "author": "Kevin Schwarz",
   "license": "MIT No Attribution",
   "dependencies": {
-    "aws-amplify": "^5.2.5"
+    "aws-amplify": "^5.3.12"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
